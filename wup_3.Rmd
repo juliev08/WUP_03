@@ -22,7 +22,12 @@ The data came from UCDavis in the year
 
 $H_0$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in.
 
-$H_A$: The average number drinks is different between at least two rows.
+$H_A$: The average number drinks is different between at least two rows.  
+
+# Methods 
+In the data set davisdata seat is a categorical variable, alcohol is numerical  
+
+We try to predict alcohol ~ seat so we use the helper file
 
 ## Now with ggplot - first select the basic data
 
