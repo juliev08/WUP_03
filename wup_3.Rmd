@@ -29,6 +29,38 @@ In the data set davisdata seat is a categorical variable, alcohol is numerical
 
 We try to predict alcohol ~ seat so we use the helper file
 
+
+# Results
+
+
+## Descriptive Results
+
+
+### Graphical summary
+
+```{r}
+basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
+```
+Now add in boxplot
+
+```{r}
+basicCN + geom_boxplot()
+```
+
+This boxplot shows that 
+
+
+### Numerical summary
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+This numerical summary shows 
+
+### Inferential Results
+
+
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
